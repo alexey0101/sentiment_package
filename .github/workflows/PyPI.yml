@@ -29,4 +29,4 @@ jobs:
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.TWINE_TOKEN }}
-        run: twine upload --repository --skip-existing testpypi dist/*
+        run: twine upload --repository testpypi  --skip-existing dist/*
